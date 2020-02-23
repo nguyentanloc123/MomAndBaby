@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
     tools:context=".Login.HelloActivity">
     <ImageButton
         android:id="@+id/btnExit"
@@ -13,10 +14,11 @@
         android:layout_height="25dp"
         android:background="@drawable/exit_button"></ImageButton>
     <ImageView
+
         android:id="@+id/imgLogo1"
         android:layout_marginTop="60dp"
         android:src="@drawable/logo1"
-        android:padding="20dp"
+        android:padding="40dp"
         android:layout_below="@id/btnExit"
         android:layout_centerHorizontal="true"
         android:layout_width="wrap_content"
@@ -24,6 +26,7 @@
     </ImageView>
 
     <TextView
+
         android:id="@+id/txtXinchao"
         android:textStyle="bold"
         android:layout_width="wrap_content"
@@ -31,27 +34,74 @@
         android:layout_below="@id/imgLogo1"
         android:layout_centerHorizontal="true"
         android:text="XIN CHÀO MẸ VÀ BÉ"
-        android:textSize="26dp"
+        android:textSize="18sp"
         app:fontFamily="sans-serif"></TextView>
-    <ImageButton
+
+    <Button
+        android:textAllCaps="false"
         android:id="@+id/btnLogin"
-        android:padding="19dp"
-        android:layout_margin="19dp"
-        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="32.2dp"
         android:layout_below="@id/txtXinchao"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"></ImageButton>
-    <ImageButton
-        android:id="@+id/btnReg"
-        android:padding="19dp"
         android:layout_centerHorizontal="true"
+        android:layout_marginStart="19dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginRight="19dp"
+        android:layout_marginBottom="19dp"
+        android:background="@drawable/button_login_state"
+
+        android:text="@string/login_text"
+        android:textColor="@color/white"></Button>
+
+    <Button
+        android:textAllCaps="false"
+        android:id="@+id/btnReg"
+        android:layout_width="match_parent"
+        android:textColor="@color/white"
+        android:layout_height="32.2dp"
         android:layout_below="@id/btnLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="19dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginRight="19dp"
+        android:layout_marginBottom="19dp"
+        android:background="@drawable/button_reg_state"
+        android:text="@string/reg_text">
+    </Button>
+    <TextView
+        android:id="@+id/txtor"
+        android:textStyle="bold"
+        android:layout_below="@id/btnReg"
+        android:layout_centerHorizontal="true"
+        android:text="Hoặc"
         android:layout_width="wrap_content"
-        android:layout_margin="19dp"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"></TextView>
+
+    <Button
+        android:textAllCaps="false"
+        android:id="@+id/btnLoginFacebook"
+        android:layout_width="match_parent"
+        android:layout_height="32.2dp"
+        android:layout_below="@id/txtor"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="19dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginRight="19dp"
+        android:layout_marginBottom="19dp"
+        android:background="@drawable/button_login_facebook_state"
+        android:drawableLeft="@drawable/iconfacebook"
+        android:paddingLeft="5dip"
+        android:textColor="@color/white"
+        android:text="@string/facebook_text"></Button>
 
 
-    </ImageButton>
+
 
 
 </RelativeLayout>
