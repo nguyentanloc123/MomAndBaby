@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login.HelloActivity">
+    <ImageButton
+        android:id="@+id/btnExit"
+        android:layout_marginTop="19dp"
+        android:layout_marginLeft="19dp"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="@drawable/exit_button"></ImageButton>
+    <ImageView
+        android:id="@+id/imgLogo1"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/logo1"
+        android:padding="20dp"
+        android:layout_below="@id/btnExit"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/txtXinchao"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgLogo1"
+        android:layout_centerHorizontal="true"
+        android:text="XIN CHÀO MẸ VÀ BÉ"
+        android:textSize="26dp"
+        app:fontFamily="sans-serif"></TextView>
+    <ImageButton
+        android:id="@+id/btnLogin"
+        android:padding="19dp"
+        android:layout_margin="19dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/txtXinchao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></ImageButton>
+    <ImageButton
+        android:id="@+id/btnReg"
+        android:padding="19dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_margin="19dp"
+        android:layout_height="wrap_content">
+
+
+    </ImageButton>
+
+
+</RelativeLayout>
