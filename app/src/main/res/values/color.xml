@@ -1,5 +1,12 @@
 <resources>
     <color name="colorPrimary">#00E676</color>
-    <color name="colorPrimaryDark">#C1C1C1</color>
+    <color name="colorPrimaryDark">#03BE61</color>
     <color name="colorAccent">#B2FF59</color>
+    <color name="white" >#fff</color>
+    <color name="colorGray">#CCCCCC</color>
+    <color name="colorGrayDark">#A09E9E</color>
+    <color name="colorFacebook">#3B5998</color>
+    <color name="colorFacebookDark">#22448B</color>
+    <color name="colorGooglePlus">#D34836</color>
+    <color name="edittextColor">#D5D0D0</color>
 </resources>
