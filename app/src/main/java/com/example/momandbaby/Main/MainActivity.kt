@@ -1,7 +1,8 @@
-package com.example.momandbaby
+package com.example.momandbaby.Main
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.momandbaby.R
 
 class MainActivity : AppCompatActivity() {
 
