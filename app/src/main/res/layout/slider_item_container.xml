@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:elevation="10dp"
+        android:id="@+id/layoutsub1"
+        android:background="@drawable/panel1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:padding="19dp"
+            android:id="@+id/txtdot"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/dot_slide"
+            android:layout_width="50dp"
+            android:layout_height="50dp"></ImageView>
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="3dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:id="@+id/txtdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+        <TextView
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:text="Tuần"
+            android:layout_marginTop="37dp"
+            android:padding="19dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></TextView>
+
+    </RelativeLayout>
+    <TextView
+        android:textStyle="bold"
+        android:id="@+id/txtlabel1"
+        android:layout_marginTop="19dp"
+        android:textSize="15sp"
+        android:layout_marginLeft="19dp"
+        android:text="Thông tin của bé"
+        android:layout_below="@+id/layoutsub1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></TextView>
+    <LinearLayout
+        android:elevation="10dp"
+        android:id="@+id/layoutsub2"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="19dp"
+        android:layout_marginLeft="19dp"
+        android:background="@drawable/bgblue"
+        android:layout_below="@+id/txtlabel1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:maxLines="6"
+        android:textColor="@color/white"
+        android:singleLine="false"
+        android:id="@+id/txtchieucao"
+        android:layout_margin="9dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></TextView>
+
+    </LinearLayout>
+    <ImageView
+        android:layout_marginLeft="37dp"
+
+        android:layout_margin="19dp"
+        android:background="@drawable/logo3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </ImageView>
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/txtloikhuyensub"
+        android:textStyle="bold"
+        android:text="Lời khuyên cho mẹ"
+        android:layout_below="@id/layoutsub2"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="19dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></TextView>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/layoutsub4"
+        android:background="@drawable/bgred"
+        android:layout_marginBottom="19dp"
+        android:elevation="10dp"
+        android:layout_below="@id/txtloikhuyensub"
+        android:layout_marginTop="9dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginRight="19dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:maxLines="6"
+            android:layout_weight="1"
+            android:layout_margin="9dp"
+            android:id="@+id/txtloikhuyen"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></TextView>
+        <ImageView
+
+            android:layout_margin="9dp"
+            android:background="@drawable/mom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></ImageView>
+        </LinearLayout>
+
+</RelativeLayout>
