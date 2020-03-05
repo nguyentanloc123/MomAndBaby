@@ -1,9 +1,11 @@
 package com.example.momandbaby.Login
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import com.example.momandbaby.Contans
+import com.example.momandbaby.Main.MainActivity
 import com.example.momandbaby.R
 import kotlinx.android.synthetic.main.activity_info.*
 
@@ -22,6 +24,8 @@ class InfoActivity : AppCompatActivity() {
                                       editText4.text.toString(),
                                       editText5.text.toString(),
                                       editText6.text.toString())
+                val intent: Intent= Intent(this,MainActivity::class.java)
+                startActivity(intent)
             }
         }
     }

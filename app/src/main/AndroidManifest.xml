@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.momandbaby">
 
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,10 +12,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
-        <activity android:name=".InfoBabyActivity"></activity>
+        <activity android:name=".GalleryActivity"></activity>
+        <activity android:name=".InfoMomActivity" />
+        <activity android:name=".InfoBabyActivity" />
         <activity android:name=".Login.InfoActivity" />
         <activity android:name=".Login.LoginActivity" />
-        <activity android:name=".Main.MainActivity">
+        <activity android:name=".Main.MainActivity"/>
+        <activity
+            android:name=".Login.HelloActivity"
+            android:noHistory="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -37,7 +37,6 @@
         app:layout_constraintTop_toTopOf="parent"></ImageView>
 
     <TextView
-        android:textAlignment="center"
         android:id="@+id/txtXinchao"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -45,9 +44,10 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="19dp"
         android:text="@string/xin_ch_o_m_v_b"
+        android:textAlignment="center"
         android:textSize="18sp"
-        android:textStyle="bold"
-        app:fontFamily="sans-serif"
+
+        app:fontFamily="@font/segoe_ui_bold"
         app:layout_constraintBottom_toTopOf="@+id/btnLogin"
         app:layout_constraintEnd_toEndOf="@+id/btnLogin"
         app:layout_constraintHorizontal_bias="0.497"

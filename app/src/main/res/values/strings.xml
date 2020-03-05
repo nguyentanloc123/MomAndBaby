@@ -7,4 +7,6 @@
     <string name="text_quenmatkhau">Quên mật khẩu</string>
     <string name="text_xinchao">THÔNG TIN MẸ VÀ BÉ</string>
     <string name="text_inputme">Nhập tên mẹ</string>
+    <string name="server_client_id">YOUR_SERVER_CLIENT_ID</string>
+
 </resources>

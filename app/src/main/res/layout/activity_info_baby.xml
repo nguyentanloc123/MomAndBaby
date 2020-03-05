@@ -5,15 +5,49 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".InfoBabyActivity">
-    <ImageView
-        android:background="@drawable/bgblue"
-        android:id="@+id/imgbaby"
-        android:layout_width="match_parent"
-        android:layout_height="150dp"></ImageView>
+    <Button
+        android:id="@+id/sub1"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="27dp"
+        android:background="@drawable/exit_button"
+        android:layout_width="25dp"
+        android:layout_height="25dp"></Button>
     <TextView
-        android:id="@+id/txtbaby"
-        android:layout_below="@id/imgbaby"
-        android:layout_margin="19dp"
+        android:layout_marginTop="19dp"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:id="@+id/sub3"
+        android:text="Tuần thứ 2"
+        android:layout_marginLeft="19dp"
+        android:layout_below="@id/sub1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"></TextView>
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="4dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="19dp"
+        android:layout_marginLeft="19dp"
+        android:layout_below="@id/sub3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/imgbaby"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></ImageView>
+            <TextView
+
+                android:layout_margin="9dp"
+                android:id="@+id/txtbaby"
+                android:textColor="#615F5F"
+                android:textSize="16sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></TextView>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
 </RelativeLayout>

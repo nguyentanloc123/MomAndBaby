@@ -74,7 +74,7 @@
     </LinearLayout>
     <ImageView
         android:layout_marginLeft="37dp"
-
+        android:id="@+id/imglogo3"
         android:layout_margin="19dp"
         android:background="@drawable/logo3"
         android:layout_width="wrap_content"
@@ -113,7 +113,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"></TextView>
         <ImageView
-
+            android:id="@+id/imglogo4"
             android:layout_margin="9dp"
             android:background="@drawable/mom"
             android:layout_width="wrap_content"
