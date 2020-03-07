@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
+import com.bestsoft32.tt_fancy_gif_dialog_lib.TTFancyGifDialog
 import com.example.momandbaby.Main.MainActivity
 import com.example.momandbaby.R
 import com.google.android.gms.auth.api.signin.GoogleSignIn
@@ -41,6 +42,26 @@ class HelloActivity : AppCompatActivity() {
         btnReg.setOnClickListener {
             startActivity(Intent(this,RegActivity::class.java))
             finish()
+        }
+        btnExit.setOnClickListener {
+            TTFancyGifDialog.Builder(this)
+                .setTitle("Thoát")
+                .setMessage("Bạn có muốn thoát ứng dụng")
+                .setNegativeBtnBackground("#00E676")
+                .setPositiveBtnBackground("#CCCCCC")
+                .setPositiveBtnText("OK")
+                .setNegativeBtnText("Không")
+                .setGifResource(R.drawable.exitgif)
+                .isCancellable(true)
+                .OnPositiveClicked {
+                    System.exit(1)
+                    finish()
+                }
+                .OnNegativeClicked {
+
+                }
+                .build()
+
         }
 
     }
@@ -83,4 +104,5 @@ class HelloActivity : AppCompatActivity() {
         val account = GoogleSignIn.getLastSignedInAccount(this)
         updateUI(account)
     }
+
 }

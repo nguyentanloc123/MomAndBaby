@@ -48,6 +48,9 @@ class InfoActivity : AppCompatActivity() {
                 finish()
             }
         }
+        btnExit.setOnClickListener {
+            startActivity(Intent(this,HelloActivity::class.java))
+        }
     }
     fun validate(): Boolean= editText3.text.isNullOrEmpty() ||
             editText5.text.isNullOrEmpty() ||

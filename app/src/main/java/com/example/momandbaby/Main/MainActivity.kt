@@ -3,14 +3,12 @@ package com.example.momandbaby.Main
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.example.momandbaby.Music.MusicActivity
 import com.example.momandbaby.R
 import com.example.momandbaby.SettingActivity
 import com.example.momandbaby.data.AdapterData
 import com.example.momandbaby.data.DataSlide
-import com.google.firebase.auth.FirebaseUser
-import com.google.firebase.auth.GoogleAuthCredential
 import kotlinx.android.synthetic.main.activity_main.*
 
 
@@ -337,9 +335,14 @@ class MainActivity : AppCompatActivity() {
 
         viewpager.currentItem= tuanhientai-1
         btnSetting.setOnClickListener {
-            val intent: Intent= Intent(this,SettingActivity::class.java)
+            val intent: Intent= Intent(this,
+                SettingActivity::class.java)
             startActivity(intent)
             finish()
+        }
+        imgMusic.setOnClickListener {
+            startActivity(Intent(this,
+                MusicActivity::class.java))
         }
 
     }

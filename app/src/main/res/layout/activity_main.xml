@@ -83,6 +83,7 @@
             android:orientation="vertical">
 
             <ImageView
+                android:id="@+id/imgMusic"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -127,7 +128,7 @@
                 android:background="#01434E"
                 android:gravity="center"
                 android:padding="5dp"
-                android:text="Âm nhạc cho bé"
+                android:text="Hình ảnh mẹ và bé"
                 android:textColor="@color/white"
                 android:textSize="13sp"></TextView>
         </LinearLayout>

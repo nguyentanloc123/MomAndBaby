@@ -18,6 +18,9 @@ class LoginActivity : AppCompatActivity() {
                 finish()
             }
         )
+        btnExit.setOnClickListener {
+            startActivity(Intent(this,HelloActivity::class.java))
+        }
     }
 
     override fun onStop() {

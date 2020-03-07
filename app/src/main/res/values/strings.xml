@@ -3,6 +3,7 @@
     <string name="login_text">Đăng nhập</string>
     <string name="reg_text">Đăng kí</string>
     <string name="facebook_text">Đăng nhập với FaceBook</string>
+    <string name="google_text">Đăng nhập với Google</string>
     <string name="xin_ch_o_m_v_b">XIN CHÀO MẸ VÀ BÉ</string>
     <string name="text_quenmatkhau">Quên mật khẩu</string>
     <string name="text_xinchao">THÔNG TIN MẸ VÀ BÉ</string>

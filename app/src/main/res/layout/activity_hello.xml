@@ -152,7 +152,7 @@
         android:background="@drawable/button_login_google_normal"
         android:drawableLeft="@drawable/icongoogle"
         android:paddingLeft="5dip"
-        android:text="@string/facebook_text"
+        android:text="@string/google_text"
         android:textAlignment="center"
         android:textAllCaps="false"
         android:textColor="@color/white"
