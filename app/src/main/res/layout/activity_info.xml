@@ -62,7 +62,7 @@
 
     <EditText
         android:paddingLeft="10dip"
-
+        android:singleLine="true"
         android:id="@+id/editText3"
         android:layout_width="match_parent"
         android:layout_height="32.2dp"
@@ -94,7 +94,8 @@
         app:layout_constraintTop_toBottomOf="@+id/editText3" />
 
     <EditText
-
+        android:singleLine="true"
+        android:paddingLeft="10dip"
         android:id="@+id/editText4"
         android:layout_width="match_parent"
         android:layout_height="32.2dp"

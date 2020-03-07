@@ -12,12 +12,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
-        <activity android:name=".GalleryActivity"></activity>
+        <activity android:name=".Login.RegActivity"></activity>
+        <activity android:name=".GalleryActivity" />
         <activity android:name=".InfoMomActivity" />
         <activity android:name=".InfoBabyActivity" />
         <activity android:name=".Login.InfoActivity" />
         <activity android:name=".Login.LoginActivity" />
-        <activity android:name=".Main.MainActivity"/>
+        <activity android:name=".Main.MainActivity" />
+        <activity android:name=".SettingActivity" />
         <activity
             android:name=".Login.HelloActivity"
             android:noHistory="true">

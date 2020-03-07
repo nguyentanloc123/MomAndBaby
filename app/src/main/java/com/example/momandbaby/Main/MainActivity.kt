@@ -1,14 +1,16 @@
 package com.example.momandbaby.Main
 
-import android.animation.ValueAnimator
+import android.content.Context
+import android.content.Intent
 import android.os.Bundle
-import android.view.View
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.get
-import androidx.viewpager2.widget.ViewPager2
 import com.example.momandbaby.R
+import com.example.momandbaby.SettingActivity
 import com.example.momandbaby.data.AdapterData
 import com.example.momandbaby.data.DataSlide
+import com.google.firebase.auth.FirebaseUser
+import com.google.firebase.auth.GoogleAuthCredential
 import kotlinx.android.synthetic.main.activity_main.*
 
 
@@ -320,7 +322,7 @@ class MainActivity : AppCompatActivity() {
                 "Giữ liên lạc chặt chẽ với bác sĩ của bạn để luôn có được lời khuyên và sự hỗ trợ. Bác sĩ sẽ cho bạn biết về các thủ thuật giục sinh, bao gồm ARM (làm vỡ ối nhân tạo), Gel Prostaglandin (cho gel vào âm đạo), và truyền Syntocinon (truyền chất tổng hợp vào cánh tay).\n" +
                 "Hãy tự chúc mừng chính mình vì đã vượt qua thai kỳ dài thành công. Tuy nhiên, đây chỉ mới là bước khởi đầu!\n"
 
-)
+                    )
         )
     )
 
@@ -328,11 +330,20 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        val sharedPref = getSharedPreferences(
+            getString(R.string.srf), Context.MODE_PRIVATE)
+        val tuanhientai= sharedPref.getInt("tuanhientai",5)
         viewpager.adapter= dataSideAdapters
-        viewpager.currentItem= 1
 
+        viewpager.currentItem= tuanhientai-1
+        btnSetting.setOnClickListener {
+            val intent: Intent= Intent(this,SettingActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
 
     }
+
 
 }
 

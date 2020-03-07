@@ -15,7 +15,13 @@ class LoginActivity : AppCompatActivity() {
             {
                 var intent = Intent(this, InfoActivity::class.java)
                 startActivity(intent)
+                finish()
             }
         )
+    }
+
+    override fun onStop() {
+        super.onStop()
+        finish()
     }
 }
