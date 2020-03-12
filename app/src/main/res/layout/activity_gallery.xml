@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GalleryActivity">
+    <Button
+        android:id="@+id/sub1"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="27dp"
+        android:background="@drawable/exit_button"
+        android:layout_width="25dp"
+        android:layout_height="25dp"></Button>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_marginTop="19dp"
+        android:layout_marginRight="19dp"
+        android:layout_marginLeft="19dp"
+        android:layout_below="@id/sub1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>
